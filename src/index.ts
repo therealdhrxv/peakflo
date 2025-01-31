@@ -34,8 +34,6 @@ function isPeak(dt: Date): boolean {
 	const minutes = dt.getMinutes();
 	const time = hours * 100 + minutes;
 
-    console.log(`day is: ${day} & hour is: ${hours} & min is: ${minutes} & time is: ${time}`);
-
 	if (day >= 1 && day <= 5) {
 		return (
 			(time >= 800 && time < 1000) || (time >= 1630 && time < 1900)       // mon - fri: 8:00 to 10:00, 16:30 to 19:00
